@@ -166,9 +166,24 @@ html body{
   }
 
   .card-img-top{
-    height:90vh;
+    
     width:auto;
   }
+
+  .img-sus{
+    display:block;
+    margin:auto;
+  }
+  
+  .img-jos{
+    display:block;
+    margin:auto;
+  }
+
+  .about-uss{
+    margin:0 auto;
+  }
+
   /*account.html*/
 
   .promos {
@@ -264,4 +279,11 @@ html body{
 	width: 100px;
 	border-radius: 100%;
 	border: 5px solid #fff;
+}
+
+@media (max-width:992px)
+{
+  .dropdown-menu{
+    margin-left:0!important;
+  }
 }

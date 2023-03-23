@@ -27,7 +27,7 @@
 .card{
   position: relative;
   width: 50%;
-  height: 35vh;
+  height: 45vh;
   transition: transform 500ms ease-in-out;
   transform-style: preserve-3d;
   border:none!important;

@@ -122,8 +122,8 @@ html body{
       color: #fff;
       font-size: 16px;
       text-align: center;
-      background: #0066cc;
-      border: 1px solid #0066cc;
+      background: #10c847;
+      border: 1px solid #00cc1b;
       padding: 11px 23px 14px;
       border-radius: 30px;
       min-width: 166px;
@@ -156,6 +156,10 @@ html body{
     bottom:-50px!important;
  }
 
+  .btn-primary{
+    background: #10c847!important;
+    border: 1px solid #00cc1b!important;
+  }
   .card-testimonials{
     margin:0 auto;
     text-align:center;

@@ -1,36 +1,49 @@
 <?php
-  session_start();
-  if (isset($_SESSION['ID'])) {
+if (isset($_SESSION['ID'])) {
       header("Location:index.php");
       exit();
   }
-  // Include database connectivity
+  // session_start();
+  // if (isset($_SESSION['ID'])) {
+  //     header("Location:index.php");
+  //     exit();
+  // }
+  // // Include database connectivity
     
-  include_once('config.php');
+  // include_once('config.php');
   
-  if (isset($_POST['submit'])) {
-      $errorMsg = "";
-      $username = $con->real_escape_string($_POST['username']);
-      $password = $con->real_escape_string(md5($_POST['password']));
+  // if (isset($_POST['submit'])) {
+  //     $errorMsg = "";
+  //     $username = $con->real_escape_string($_POST['username']);
+  //     $password = $con->real_escape_string(md5($_POST['password']));
       
-  if (!empty($username) || !empty($password)) {
-        $query  = "SELECT * FROM users WHERE username = '$username'";
-        $result = $con->query($query);
-        if($result->num_rows > 0){
-            $row = $result->fetch_assoc();
-            $_SESSION['ID'] = $row['id'];
-            $_SESSION['ROLE'] = $row['role'];
-            $_SESSION['NAME'] = $row['name'];
-            // urmeaza logica pentru permisiuni in functie de rol
-            header("Location:index.php");
-            die();                              
-        }else{
-          $errorMsg = "No user found on this username";
-        } 
-    }else{
-      $errorMsg = "Username and Password is required";
-    }
-  }
+  // if (!empty($username) || !empty($password)) {
+  //       $query  = "SELECT * FROM users WHERE username = '$username'";
+  //       $result = $con->query($query);
+  //       if($result->num_rows > 0){
+  //           $row = $result->fetch_assoc();
+  //           $_SESSION['ID'] = $row['id'];
+  //           $_SESSION['ROLE'] = $row['role'];
+  //           $_SESSION['NAME'] = $row['name'];
+  //           // urmeaza logica pentru permisiuni in functie de rol
+  //           header("Location:index.php");
+  //           die();                              
+  //       }else{
+  //         $errorMsg = "No user found on this username";
+  //       } 
+  //   }else{
+  //     $errorMsg = "Username and Password is required";
+  //   }
+  // }
+  include_once('loginlogic.php');
+  if($ok == 1){
+    echo $ok;
+    header("Location:index.php");
+    die();                              
+}else{
+  $errorMsg = "Please insert your username and password";
+} 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

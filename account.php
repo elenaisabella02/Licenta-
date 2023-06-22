@@ -81,8 +81,7 @@
                   </div>
                   <span class="price">©79</span>
                   <ul class="features">
-                    <li>Două cursuri individuale</li>
-                    <li>Trei cursuri cu 5 persoane</li>
+                    <li>Acces la două cursuri</li>
                     <li>Poți alege cursurile </li>   
                     <button class="send_button shop-button">Selectează</button>
                   </ul>
@@ -94,8 +93,7 @@
                   </div>
                   <span class="price">©99</span>
                   <ul class="features">
-                    <li>Acces la trei cursuri individuale</li>
-                    <li>Acces la patru cursuri cu 5 persoane</li>
+                    <li>Acces la trei cursuri</li>
                     <li>Alege-ți cursurile favorite</li>  
                     <button class="send_button shop-button">Selectează</button> 
                   </ul>
@@ -107,8 +105,7 @@
                   </div>
                   <span class="price">©59</span>
                   <ul class="features">
-                    <li>Un curs individual</li>
-                    <li>Două cursuri cu 5 persoane</li>
+                    <li>Acces la un curs</li>
                     <li>Poți alege cursurile</li>   
                     <button class="send_button shop-button">Selectează</button>
                   </ul>

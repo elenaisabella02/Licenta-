@@ -1,3 +1,8 @@
+<?php 
+
+include_once('loginlogic.php');
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,21 +106,16 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Nume</label>
-                                          <input type="text" class="form-control" value="Numele tău">
+                                          <input type="text" class="form-control" value="<?php echo $_SESSION['NAME'] ?>">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                          <label>Prenume</label>
-                                          <input type="text" class="form-control" value="Prenumele tău">
+                                          <label>Username</label>
+                                          <input type="text" class="form-control" value="<?php echo $_SESSION['USERNAME'] ?>">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                          <label>Email</label>
-                                          <input type="text" class="form-control" value="example@gmail.com">
-                                    </div>
-                                </div>
+                                
                                 
                             </div>
                             <div>
@@ -124,12 +124,13 @@
                             </div>
                       </div>
                         <div class="tab-pane tabcontent" id="password" role="tabpanel" aria-labelledby="password-tab">
-                            <h3 class="mb-4">Parola</h3>
+                        <form method="post" action="change-password.php">    
+                        <h3 class="mb-4">Parola</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Parola veche</label>
-                                          <input type="password" class="form-control">
+                                          <input type="password" name="old_pass" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -137,20 +138,21 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Parola noua</label>
-                                          <input type="password" class="form-control">
+                                          <input type="password" name="new_pass" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Confirma parola</label>
-                                          <input type="password" class="form-control">
+                                          <input type="password" name="re_pass" class="form-control">
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">Update</button>
                                 <button class="btn btn-light">Cancel</button>
                             </div>
+                            </form>
                         </div>
 
                         <div class="tab-pane tabcontent" id="application" role="tabpanel" aria-labelledby="application-tab">

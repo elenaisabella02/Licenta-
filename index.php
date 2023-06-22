@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img style="width:5rem;" src="assets/images/logo.png"></a>
+              <a class="navbar-brand" href="index.php"><img style="width:5rem;" src="assets/images/logo.png"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -28,34 +28,28 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item px-3">
-                        <a class="nav-link" href="about-us.html">Despre noi</a>
+                        <a class="nav-link" href="about-us.php">Despre noi</a>
                       </li>
                       <li class="nav-item dropdown px-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Cursurile noastre
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="curs1.html">Front-End Developer</a></li>
-                          <li><a class="dropdown-item" href="curs2.html">Back-End Developer</a></li>
-                          <li><a class="dropdown-item" href="curs3.html">C#</a></li>
-                          <li><a class="dropdown-item" href="curs4.html">Java</a></li>
-                          <li><a class="dropdown-item" href="curs5.html">Python</a></li>
-                          <li><a class="dropdown-item" href="curs6.html">iOS Developer</a></li>
+                          <li><a class="dropdown-item" href="curs1.php">Front-End Developer</a></li>
+                          <li><a class="dropdown-item" href="curs2.php">Back-End Developer</a></li>
+                          <li><a class="dropdown-item" href="curs3.php">C#</a></li>
+                          <li><a class="dropdown-item" href="curs4.php">Java</a></li>
+                          <li><a class="dropdown-item" href="curs5.php">Python</a></li>
+                          <li><a class="dropdown-item" href="curs6.php">iOS Developer</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="toate-cursurile.html">Toate cursurile</a></li>
+                          <li><a class="dropdown-item" href="toate-cursurile.php">Toate cursurile</a></li>
                         </ul>
                       </li>
                       <li class="nav-item dropdown px-3">
-                        <a class="nav-link" href="our-team.html">Echipa noastra</a>
+                        <a class="nav-link" href="our-team.php">Echipa noastra</a>
                       </li>
                       <li class="nav-item dropdown px-3">
-                        <a class="nav-link" href="become-teacher.html">Devino profesor!</a>
-                      </li>
-                      <li class="nav-item dropdown px-3">
-                        <a class="nav-link" href="become-student.html">Devino student!</a>
-                      </li>
-                      <li class="nav-item dropdown px-3">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                       </li>
                       <li class="nav-item dropdown px-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,8 +57,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="login.php"><i class="fa fa-user-tie fa-fw"></i>Log in</a></li>
-                          <li><a class="dropdown-item" href="account.html"><i class="fas fa-sliders-h fa-fw"></i> Account</a></li>
-                          <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog fa-fw"></i> Settings</a></li>
+                          <li><a class="dropdown-item" href="account.php"><i class="fas fa-sliders-h fa-fw"></i> Account</a></li>
+                          <li><a class="dropdown-item" href="settings.php"><i class="fas fa-cog fa-fw"></i> Settings</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
                         </ul>
@@ -162,7 +156,7 @@
                 </div>
               </div>
               <div class="center-button pt-5">
-                <a href= "about-us.html">
+                <a href= "about-us.php">
                 <button class="send_button">
                   <span>Vezi mai mult</span>
                 </button>
@@ -179,61 +173,61 @@
           <div class="row pt-4">
                 <div class="col-md-4 col-sm-6 pb-3">
                   <div class="card">
-                    <img src="/Licenta-/assets/images/index.html/front-end-developer.jpg" class="card-img-top courses-img" alt="...">
+                    <img src="assets/images/index.html/front-end-developer.jpg" class="card-img-top courses-img" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Front-End</h5>
                       <p class="card-text">Realizarea unei interfețe a unui website nu va mai fi niciodată grea.</p>
-                      <a href="curs1.html" class="btn btn-primary">Vezi mai mult</a>
+                      <a href="curs1.php" class="btn btn-primary">Vezi mai mult</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 pb-3">
                   <div class="card">
-                    <img src="/Licenta-/assets/images/index.html/back-end-developer.jpg" class="card-img-top courses-img" alt="...">
+                    <img src="assets/images/index.html/back-end-developer.jpg" class="card-img-top courses-img" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Back-End</h5>
                       <p class="card-text">Funcționalitatea proiectelor înseamnă complexitatea caracteristicilor.</p>
-                      <a href="curs2.html" class="btn btn-primary">Vezi mai mult</a>
+                      <a href="curs2.php" class="btn btn-primary">Vezi mai mult</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 pb-3">
                     <div class="card">
-                      <img src="/Licenta-/assets/images/index.html/C-Developer.jpg" class="card-img-top courses-img" alt="...">
+                      <img src="assets/images/index.html/C-Developer.jpg" class="card-img-top courses-img" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">C#</h5>
                         <p class="card-text">De la simplă algoritmică, până la realizare de jocuri în aplicație.</p>
-                        <a href="curs3.html" class="btn btn-primary">Vezi mai mult</a>
+                        <a href="curs3.php" class="btn btn-primary">Vezi mai mult</a>
                       </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 pb-3">
                     <div class="card">
-                      <img src="/Licenta-/assets/images/index.html/java-developer.jpg" class="card-img-top courses-img" alt="...">
+                      <img src="assets/images/index.html/java-developer.jpg" class="card-img-top courses-img" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Java</h5>
                         <p class="card-text">Un limbaj pentru toată lumea, cu întrebuințare în toate domeniile.</p>
-                        <a href="curs4.html" class="btn btn-primary">Vezi mai mult</a>
+                        <a href="curs4.php" class="btn btn-primary">Vezi mai mult</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 pb-3">
                     <div class="card">
-                      <img src="/Licenta-/assets/images/index.html/python-developer.jpg" class="card-img-top courses-img" alt="...">
+                      <img src="assets/images/index.html/python-developer.jpg" class="card-img-top courses-img" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Python</h5>
                         <p class="card-text">De la probleme logice, până la jocuri Snake sau MP3 downloaders.</p>
-                        <a href="curs5.html" class="btn btn-primary">Vezi mai mult</a>
+                        <a href="curs5.php" class="btn btn-primary">Vezi mai mult</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 pb-3">
                       <div class="card">
-                        <img src="/Licenta-/assets/images/index.html/iOS-Developer.jpg" class="card-img-top courses-img" alt="...">
+                        <img src="assets/images/index.html/iOS-Developer.jpg" class="card-img-top courses-img" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Swift</h5>
                           <p class="card-text">Dezvoltare de diverse aplicații pentru utilizatorii de iOS.</p>
-                          <a href="curs6.html" class="btn btn-primary">Vezi mai mult</a>
+                          <a href="curs6.php" class="btn btn-primary">Vezi mai mult</a>
                         </div>
                     </div>
                 </div>
@@ -269,7 +263,7 @@
                 </div>
               </div>
               <div class="center-button pt-5">
-                <a href="our-team.html">
+                <a href="our-team.php">
                 <button class="send_button">
                   <span>Vezi toți mentorii</span>
                 </button>
@@ -293,7 +287,7 @@
                       <p class="card-text">Devino parte dintr-o comunitate unită, care vrea sa contribuie la dezvoltarea generațiilor actuale și la formarea lor.Formarea noilor talente poate sta în mâinile tale, la fel ca împărtășirea pasiunii cu care noi ne facem treaba. Dacă simți că poți avea un impact în viața celor la început de drum, te invităm să te alături echipei noastre, care se mărește continuu.
                       </p>
                       <div class="center-button">
-                        <a href="become-teacher.html">
+                        <a href="signup.php">
                         <button class="send_button">
                           <span>Devino profesor!</span>
                         </button>
@@ -317,7 +311,7 @@
                       <h5 class="card-title">Vrei să devii student?</h5>
                       <p class="card-text">Dacă vrei să-ți începi drumul în domeniul IT, suntem locul potrivit pentru tine. Ne dorim ca elevii noștri să acumuleze suficiente cunoștințe în cadrul academiei, astfel încât la finalizarea ei, să se poată angaja la orice firmă își doresc. Punem mare accent pe seriozitate, implicare și străduință. Noi credem că niciodată nu e prea târziu să înveți ceva nou.</p>
                       <div class="center-button">
-                        <a href="become-student.html">
+                        <a href="signup.php">
                         <button class="send_button">
                           <span>Devino student!</span>
                         </button>
@@ -437,74 +431,74 @@
     </div>
     <footer class="text-center text-lg-start bg-white text-muted pt-3">
 
-        <section class="footer">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3 text-secondary"></i>IT Academy
-                </h6>
-                <p>
-                  Suntem aici pentru tine, să te ajutăm și să te îndrumăm spre noua ta carieră în domeniul IT.<br> 
-                  Mentori implicați, cursuri actualizate, implicare și seriozitate în tot ceea ce facem pentru tine.
-                </p>
-              </div>
-      
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Cursuri
-                </h6>
-                <p>
-                  <a href="curs1.html" class="text-reset">Front-End</a>
-                </p>
-                <p>
-                  <a href="curs2.html" class="text-reset">Back-End</a>
-                </p>
-                <p>
-                  <a href="curs4.html" class="text-reset">Java</a>
-                </p>
-                <p>
-                  <a href="curs6.html" class="text-reset">Swift</a>
-                </p>
-              </div>
+      <section class="footer">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>IT Academy
+              </h6>
+              <p>
+                Suntem aici pentru tine, să te ajutăm și să te îndrumăm spre noua ta carieră în domeniul IT.<br> 
+                Mentori implicați, cursuri actualizate, implicare și seriozitate în tot ceea ce facem pentru tine.
+              </p>
+            </div>
+    
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Cursuri
+              </h6>
+              <p>
+                <a href="curs1.php" class="text-reset">Front-End</a>
+              </p>
+              <p>
+                <a href="curs2.php" class="text-reset">Back-End</a>
+              </p>
+              <p>
+                <a href="curs4.php" class="text-reset">Java</a>
+              </p>
+              <p>
+                <a href="curs6.php" class="text-reset">Swift</a>
+              </p>
+            </div>
 
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Accesare rapidă
-                </h6>
-                <p>
-                  <a href="about-us.html" class="text-reset">Despre noi</a>
-                </p>
-                <p>
-                  <a href="our-team.html" class="text-reset">Echipa noastra</a>
-                </p>
-                <p>
-                  <a href="become-student.html" class="text-reset">Devino student</a>
-                </p>
-                <p>
-                  <a href="become-teacher.html" class="text-reset">Devino profesor</a>
-                </p>
-              </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Accesare rapidă
+              </h6>
+              <p>
+                <a href="about-us.php" class="text-reset">Despre noi</a>
+              </p>
+              <p>
+                <a href="our-team.php" class="text-reset">Echipa noastra</a>
+              </p>
+              <p>
+                <a href="login.php" class ="text-reset">Loghează-te</a>
+              </p>
+              <p>
+                <a href="signup.php" class="text-reset">Înregistrează-te</a>
+              </p>
+            </div>
 
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3 text-secondary"></i> Iași, Bld. Carol I, Nr. 9</p>
-                <p>
-                  <i class="fas fa-envelope me-3 text-secondary"></i>
-                  contact@itacademy.com
-                </p>
-                <p><i class="fas fa-phone me-3 text-secondary"></i> + 0743 489 325</p>
-                <p><i class="fas fa-print me-3 text-secondary"></i> + 0742 904 822</p>
-              </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> Iași, Bld. Carol I, Nr. 9</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                contact@itacademy.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> + 0743 489 325</p>
+              <p><i class="fas fa-print me-3 text-secondary"></i> + 0742 904 822</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.025);">
-          <div>
-              <p>©IT Academy 2023</p>
-            </div>
-      </div>
-      </footer>
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.025);">
+        <div>
+            <p>©IT Academy 2023</p>
+          </div>
+    </div>
+    </footer>
 </body>
 </html>

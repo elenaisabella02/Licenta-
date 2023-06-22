@@ -85,21 +85,21 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <form>
+                    <form role = "form" action = "yourform-processor.php" method ="post">
                       <div class="mb-3">
-                          <label for="inputName" class="form-label">Numele tău</label>
-                          <input type="name" class="form-control" id="inputName">
+                          <label for="name" class="form-label">Numele tău</label>
+                          <input type="text" class="form-control" id="name" name = "name">
                       </div>
                       <div class="mb-3">
-                        <label for="inputEmail1" class="form-label">Adresa de e-mail</label>
-                        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Adresa ta de e-mail nu va fi folosită decât pentru a-ți răspune la mesajul trimis.</div>
+                        <label for="email" class="form-label">Adresa de e-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                        <div id="emailHelp" class="form-text">Adresa ta de e-mail nu va fi folosită decât pentru a-ți răspunde la mesajul trimis.</div>
                       </div>
                       <div class="mb-3">
-                          <label for="inputMessage" class="form-label">Mesajul tău</label>
-                          <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                          <label for="message" class="form-label">Mesajul tău</label>
+                          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary">Trimite</button>
+                      <input type="submit" class="btn btn-primary" id ="submit-button" name="submit">Trimite</button>
                     </form>
                   </div>
                 </div>

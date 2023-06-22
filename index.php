@@ -63,7 +63,6 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="login.php"><i class="fa fa-user-tie fa-fw"></i>Log in</a></li>
-                          <li><a class="dropdown-item" href="profile.html"><i class="fa fa-user-tie fa-fw"></i> Profile</a></li>
                           <li><a class="dropdown-item" href="account.html"><i class="fas fa-sliders-h fa-fw"></i> Account</a></li>
                           <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog fa-fw"></i> Settings</a></li>
                           <li><hr class="dropdown-divider"></li>

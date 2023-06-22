@@ -187,6 +187,7 @@
       <input class="btn font2 fw500" type="button" value="Plateste">
     </div>
     </div>
+    
   </div>
 </div>
 <script>

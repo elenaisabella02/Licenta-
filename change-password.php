@@ -3,7 +3,7 @@
 
 if (isset($_POST['re_pass']))
 	{
-        echo "dick";
+ 
 	$old_pass = $_POST['old_pass'];
 	$new_pass = $_POST['new_pass'];
 	$re_pass = $_POST['re_pass'];

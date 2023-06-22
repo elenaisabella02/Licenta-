@@ -101,27 +101,28 @@ include_once('loginlogic.php');
                     </div>
                     <div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
                       <div class="tab-pane tabcontent active" id="account" role="tabpanel" aria-labelledby="account-tab">
-                            <h3 class="mb-4">Contul meu</h3>
+                      <form method="post" action="change-name.php">      
+                      <h3 class="mb-4">Contul meu</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Nume</label>
-                                          <input type="text" class="form-control" value="<?php echo $_SESSION['NAME'] ?>">
+                                          <input type="text" class="form-control" name="name" value="<?php echo $_SESSION['NAME'] ?>">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                           <label>Username</label>
-                                          <input type="text" class="form-control" value="<?php echo $_SESSION['USERNAME'] ?>">
+                                          <input type="text" class="form-control" name="username" value="<?php echo $_SESSION['USERNAME'] ?>">
                                     </div>
                                 </div>
                                 
                                 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Update</button>
-                                <button class="btn btn-light">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Update</button>
                             </div>
+                            </form>
                       </div>
                         <div class="tab-pane tabcontent" id="password" role="tabpanel" aria-labelledby="password-tab">
                         <form method="post" action="change-password.php">    
@@ -150,7 +151,6 @@ include_once('loginlogic.php');
                             </div>
                             <div>
                                 <button type="submit" class="btn btn-primary">Update</button>
-                                <button class="btn btn-light">Cancel</button>
                             </div>
                             </form>
                         </div>

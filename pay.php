@@ -150,7 +150,7 @@
     <div class="footer">
       <div class="left">
         <div class="cardtitle font2 fw500">CARD HOLDER</div>
-        <p class="card-holder font2 fw400">JOSE RAFAEL D AMORIM</p>
+        <p class="card-holder font2 fw400">BRAGA ELENA-ISABELLA</p>
       </div>
       <div class="right">
         <div class="cardtitle font2 fw500">EXPIRES</div>

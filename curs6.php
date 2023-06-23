@@ -11,6 +11,7 @@ if (isset($_POST['submit'])) {
   
   if ($result) {
       echo "Enrollment successful!";
+      header("Location:pay.php");
   } else {
       echo "Error: " . mysqli_error($con);
   }

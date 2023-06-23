@@ -82,7 +82,7 @@ include_once('loginlogic.php');
                             <div class="img-circle text-center mb-3">
                                 <img src="assets/images/settings.html/profile-photo.png" alt="Image" class="shadow">
                             </div>
-                            <h4 class="text-center">Numele tău</h4>
+                            <h4 class="text-center"><?php echo $_SESSION['NAME'] ?></h4>
                         </div>
                         <div class="nav tab flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active tablinks" id="account-tab" data-toggle="pill" href="#!account" role="tab" aria-controls="account" aria-selected="true" onclick="openTab(event, 'account')">
@@ -158,17 +158,25 @@ include_once('loginlogic.php');
                         <div class="tab-pane tabcontent" id="application" role="tabpanel" aria-labelledby="application-tab">
                             <h3 class="mb-4">Cursurile active</h3>
                             <div class="row">
-                              <div class="col-md-6">
-                                <label>Ordoneaza</label>
-                                <select name="ordonare" class="ordonare" id="ordonare">
-                                  <option value="creascator-alfabetic">Alfabetic A-Z</option>
-                                  <option value="descrescator-alfabetic">Alfabetic Z-A</option>
-                                </select>
-                              </div>
-                              <div class="col-md-6">
-                                <button class="btn btn-outline-dark btn-sm">Ordoneaza</button>
-                              </div>
+                              <?php 
+                                // $queryy = "SELECT * FROM users";
+                                // $nume_user = mysqli_query($con, $queryy);
+                                
+                                $queryy1 = "SELECT * FROM inscrieri";
+                                $nume_user1 = mysqli_query($con, $queryy1);
+                                
+                                while($numeUserCurs = $nume_user1 -> fetch_assoc())
+                                {
+                                  if($numeUserCurs["nume"] == $_SESSION["NAME"])
+                                    {
+                                      $numecurs = $numeUserCurs["curs"];
+                                      echo '<p>'."$numecurs".'</a>';
+                                    }
+                                }
+                              
+                              ?>
                             </div>
+
                         </div>
                     </div>
                 </div>

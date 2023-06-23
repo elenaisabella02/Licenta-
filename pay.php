@@ -185,7 +185,7 @@
 
     </div>
     <div class="nameholder">
-      <input class="btn font2 fw500" type="button" value="Plateste">
+      <a href="settings.php"><input class="btn font2 fw500" type="button" value="Plateste"></a>
     </div>
     </div>
   </div>

@@ -172,7 +172,17 @@ if ($result) {
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $data['title']; ?></h5>
                                 <p class="card-text"><?php echo $data['description']; ?></p>
+                                <div class="row">
+                                  <div class="col-6">
                                 <a href="<?php echo $data['link']; ?>" class="btn btn-primary">Vezi mai mult</a>
+                </div>
+                <div class="col-6">
+                                <form method="POST" action="delete-course.php">
+                    <input type="hidden" name="course_id" value="<?php echo $data['id']; ?>">
+                    <button type="submit" class="btn btn-danger" id="delete-course-btn">Delete</button>
+                </form>
+                </div>
+                </div>
                             </div>
                         </div>
                     </div>
@@ -367,6 +377,7 @@ if ($result) {
                     <h5 class="card-title">${newCourse.title}</h5>
                     <p class="card-text">${newCourse.description}</p>
                     <a href="${newCourse.link}" class="btn btn-primary">Vezi mai mult</a>
+                    <button type="submit" class="btn btn-danger" id="delete-course-btn">Delete</button>
                   </div>
                 </div>
               </div>

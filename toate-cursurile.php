@@ -1,3 +1,86 @@
+          <?php
+          include_once('config.php');
+          session_start();
+          $userID = $_SESSION['ID']; // Assuming you have the user ID stored in the session
+$query = "SELECT role FROM users WHERE id = '$userID'";
+$result = mysqli_query($con, $query);
+
+if ($result) {
+    $row = mysqli_fetch_assoc($result);
+    $role = $row['role'];
+    
+    // Assign the role to the session variable
+    $_SESSION['role'] = $role;
+    
+    // Close the database connection
+} else {
+    // Handle any database errors
+    echo "Error retrieving user role.";
+}
+                // Array of courses
+                $courses = [
+                    [
+                        'title' => 'Front-End',
+                        'image' => 'assets/images/index.html/front-end-developer.jpg',
+                        'description' => 'Realizarea unei interfețe a unui website nu va mai fi niciodată grea.',
+                        'link' => 'curs1.php'
+                    ],
+                    [
+                        'title' => 'Back-End',
+                        'image' => 'assets/images/index.html/back-end-developer.jpg',
+                        'description' => 'Funcționalitatea proiectelor înseamnă complexitatea caracteristicilor.',
+                        'link' => 'curs2.php'
+                    ],
+                    [
+                      'title' => 'C#',
+                      'image' => 'assets/images/index.html/C-Developer.jpg',
+                      'description' => 'De la simplă algoritmică, până la realizare de jocuri în aplicație.',
+                      'link' => 'curs3.php'
+                    ],
+                    [
+                      'title' => 'Java',
+                      'image' => 'assets/images/index.html/java-developer.jpg',
+                      'description' => 'Un limbaj pentru toată lumea, cu întrebuințare în toate domeniile.',
+                      'link' => 'curs4.php'
+                    ],
+                    [
+                      'title' => 'Python',
+                      'image' => 'assets/images/index.html/python-developer.jpg',
+                      'description' => 'De la probleme logice, până la jocuri Snake sau MP3 downloaders.',
+                      'link' => 'curs5.php'
+                    ],
+                    [
+                      'title' => 'Swift',
+                      'image' => 'assets/images/index.html/iOS-Developer.jpg',
+                      'description' => 'Dezvoltare de diverse aplicații pentru utilizatorii de iOS.',
+                      'link' => 'curs6.php'
+                    ]
+                ];
+                $existingCourses = [];
+                $result = $con->query("SELECT title FROM toate_cursurile");
+                if ($result !== false && $result->num_rows > 0) {
+                  while ($row = $result->fetch_assoc()) {
+                    $existingCourses[] = $row['title'];
+                  }
+                }
+                foreach ($courses as $course) {
+                  $title = $con->real_escape_string($course['title']);
+
+        // Check if the course already exists in the database
+        if (in_array($title, $existingCourses)) {
+            continue; // Skip inserting the course
+        }
+                  $image = $con->real_escape_string($course['image']);
+                  $description = $con->real_escape_string($course['description']);
+                  $link = $con->real_escape_string($course['link']);
+              
+                  $sql = "INSERT INTO toate_cursurile (title, image, description, link) VALUES ('$title', '$image', '$description', '$link')";
+              
+                  if ($con->query($sql) === false) {
+                      echo "Error inserting course: " . $con->error;
+                  }
+              }
+              ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +94,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
@@ -78,66 +162,30 @@
       </div>
         <div class="toate-cursurile py-5">
           <div class="row pt-4">
-            <div class="col-md-4 col-sm-6 pb-3">
-              <div class="card">
-                <img src="assets/images/index.html/front-end-developer.jpg" class="card-img-top courses-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Front-End</h5>
-                  <p class="card-text">Realizarea unei interfețe a unui website nu va mai fi niciodată grea.</p>
-                  <a href="curs1.php" class="btn btn-primary">Vezi mai mult</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 pb-3">
-              <div class="card">
-                <img src="assets/images/index.html/back-end-developer.jpg" class="card-img-top courses-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Back-End</h5>
-                  <p class="card-text">Funcționalitatea proiectelor înseamnă complexitatea caracteristicilor.</p>
-                  <a href="curs2.php" class="btn btn-primary">Vezi mai mult</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 pb-3">
-                <div class="card">
-                  <img src="assets/images/index.html/C-Developer.jpg" class="card-img-top courses-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">C#</h5>
-                    <p class="card-text">De la simplă algoritmică, până la realizare de jocuri în aplicație.</p>
-                    <a href="curs3.php" class="btn btn-primary">Vezi mai mult</a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 pb-3">
-                <div class="card">
-                  <img src="assets/images/index.html/java-developer.jpg" class="card-img-top courses-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Java</h5>
-                    <p class="card-text">Un limbaj pentru toată lumea, cu întrebuințare în toate domeniile.</p>
-                    <a href="curs4.php" class="btn btn-primary">Vezi mai mult</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 pb-3">
-                <div class="card">
-                  <img src="assets/images/index.html/python-developer.jpg" class="card-img-top courses-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text">De la probleme logice, până la jocuri Snake sau MP3 downloaders.</p>
-                    <a href="curs5.php" class="btn btn-primary">Vezi mai mult</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 pb-3">
-                  <div class="card">
-                    <img src="assets/images/index.html/iOS-Developer.jpg" class="card-img-top courses-img" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Swift</h5>
-                      <p class="card-text">Dezvoltare de diverse aplicații pentru utilizatorii de iOS.</p>
-                      <a href="curs6.php" class="btn btn-primary">Vezi mai mult</a>
+
+              <?php
+                foreach ($courses as $course) {
+                    ?>
+                    <div class="col-md-4 col-sm-6 pb-3">
+                        <div class="card">
+                            <img src="<?php echo $course['image']; ?>" class="card-img-top courses-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $course['title']; ?></h5>
+                                <p class="card-text"><?php echo $course['description']; ?></p>
+                                <a href="<?php echo $course['link']; ?>" class="btn btn-primary">Vezi mai mult</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <?php
+                }?>
+                <?php
+                if (isset($_SESSION['role']) && $_SESSION['role'] === 'profesor') { 
+                  ?>
+                  <button class="btn btn-success" id="add-course-btn"><a style="color:white;">Add course</a></button>
+                <?php
+                }              
+                ?>
+
         </div>
         </div>
         <div class="testimoniale">
@@ -282,4 +330,62 @@
     </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Handle the "Add Course" button click event
+    $('#add-course-btn').click(function(e) {
+      e.preventDefault();
+
+      // Prompt the user to enter the course details
+      var title = prompt('Enter the course title:');
+      var image = prompt('Enter the course image URL:');
+      var description = prompt('Enter the course description:');
+      var link = prompt('Enter the course link:');
+
+      $.ajax({
+        url: 'add-course.php',
+        method: 'POST',
+        dataType: 'json',
+        data: {
+          title: title,
+          image: image,
+          description: description,
+          link: link
+        },
+        success: function(response) {
+          if (response.status === 'success') {
+            // Course added successfully, update the UI
+            var newCourse = response.courseData;
+            var courseId = response.courseId;
+
+            var courseHtml = `
+              <div class="col-md-4 col-sm-6 pb-3">
+                <div class="card">
+                  <img src="${newCourse.image}" class="card-img-top courses-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">${newCourse.title}</h5>
+                    <p class="card-text">${newCourse.description}</p>
+                    <a href="${newCourse.link}" class="btn btn-primary">Vezi mai mult</a>
+                  </div>
+                </div>
+              </div>
+            `;
+
+            // Insert the new course before the "Add Course" button
+            $(courseHtml).insertBefore('#add-course-btn');
+            alert('Course added successfully!');
+          } else {
+            // Error adding course
+            alert('Failed to add course: ' + response.message);
+          }
+        },
+        error: function() {
+          alert('An error occurred while adding the course.');
+        }
+      });
+    });
+  });
+</script>
+
 </html>

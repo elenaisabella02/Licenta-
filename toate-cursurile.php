@@ -179,8 +179,14 @@ if ($result) {
                 <div class="col-6">
                                 <form method="POST" action="delete-course.php">
                     <input type="hidden" name="course_id" value="<?php echo $data['id']; ?>">
+                    <?php
+                if (isset($_SESSION['role']) && $_SESSION['role'] === 'profesor') { 
+                  ?>
                     <button type="submit" class="btn btn-danger" id="delete-course-btn">Delete</button>
                 </form>
+                <?php
+                }              
+                ?>
                 </div>
                 </div>
                             </div>

@@ -181,7 +181,7 @@
     </div>
   <div class="nameholder">
         <p class="cardNme font2 fw500">Suma</p>
-        <input type="text" placeholder="Ex: 100" class="input-mail">
+        <p class="input-mail">©30(©1 = 1 leu)</p>
 
     </div>
     <div class="nameholder">

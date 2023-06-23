@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="https://devmind.io/assets/modules/dashboard/css/fonts.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
@@ -161,7 +162,7 @@
     <div class="payment-body">
     <div class="nameholder">
       <p class="cardNme font2 fw500">Card's Holder Name</p>
-      <input type="text" placeholder="Ex: José Rafael D Amorim" class="input-name">
+      <input type="text" placeholder="Ex: Braga Elena-Isabella" class="input-name">
     </div>
     <div class="nameholder">
         <p class="cardNme font2 fw500">Card Number</p>
@@ -187,7 +188,6 @@
       <input class="btn font2 fw500" type="button" value="Plateste">
     </div>
     </div>
-    
   </div>
 </div>
 <script>

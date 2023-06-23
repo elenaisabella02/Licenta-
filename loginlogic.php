@@ -19,7 +19,6 @@
             $_SESSION['ROLE'] = $row['role'];
             $_SESSION['NAME'] = $row['name'];
             $_SESSION['USERNAME'] = $row['username'];
-            // urmeaza logica pentru permisiuni in functie de rol
             $ok = 1;                           
         }else{
           $errorMsg = "Please insert Username and Password";

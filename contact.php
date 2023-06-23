@@ -99,7 +99,7 @@
                           <label for="message" class="form-label">Mesajul tău</label>
                           <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                       </div>
-                      <input type="submit" class="btn btn-primary" id ="submit-button" name="submit">Trimite</button>
+                      <input type="submit" class="btn btn-primary" id ="submit-button" name="submit"></button>
                     </form>
                   </div>
                 </div>

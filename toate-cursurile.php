@@ -162,15 +162,17 @@ if ($result) {
           <div class="row pt-4">
 
               <?php
-                foreach ($courses as $course) {
+                $cursuri = $con->query("SELECT * FROM toate_cursurile");
+
+                while ($data = $cursuri->fetch_assoc()) {
                     ?>
                     <div class="col-md-4 col-sm-6 pb-3">
                         <div class="card">
-                            <img src="<?php echo $course['image']; ?>" class="card-img-top courses-img" alt="...">
+                            <img src="<?php echo $data['image']; ?>" class="card-img-top courses-img" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $course['title']; ?></h5>
-                                <p class="card-text"><?php echo $course['description']; ?></p>
-                                <a href="<?php echo $course['link']; ?>" class="btn btn-primary">Vezi mai mult</a>
+                                <h5 class="card-title"><?php echo $data['title']; ?></h5>
+                                <p class="card-text"><?php echo $data['description']; ?></p>
+                                <a href="<?php echo $data['link']; ?>" class="btn btn-primary">Vezi mai mult</a>
                             </div>
                         </div>
                     </div>

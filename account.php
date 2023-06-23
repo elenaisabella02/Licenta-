@@ -79,7 +79,7 @@
                     <span>Plus</span>
                     <span>Ofertă foarte bună!</span>
                   </div>
-                  <span class="price">©79</span>
+                  <span class="price">©60</span>
                   <ul class="features">
                     <li>Acces la două cursuri</li>
                     <li>Poți alege cursurile </li>   
@@ -91,7 +91,7 @@
                     <span>Premium</span>
                     <span>Cea mai bună ofertă!</span>
                   </div>
-                  <span class="price">©99</span>
+                  <span class="price">©90</span>
                   <ul class="features">
                     <li>Acces la trei cursuri</li>
                     <li>Alege-ți cursurile favorite</li>  
@@ -103,7 +103,7 @@
                     <span>Standard</span>
                     <span>Oferta standard</span>
                   </div>
-                  <span class="price">©59</span>
+                  <span class="price">©30</span>
                   <ul class="features">
                     <li>Acces la un curs</li>
                     <li>Poți alege cursurile</li>   

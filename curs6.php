@@ -1,3 +1,22 @@
+<?php
+session_start();
+include_once('config.php');
+if (isset($_SESSION['NAME'])) {
+  $loggedInUser = $_SESSION['NAME'];
+  $courseName = "iOS Developer";
+
+if (isset($_POST['submit'])) {
+  $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
+  $result = mysqli_query($con, $query);
+  
+  if ($result) {
+      echo "Enrollment successful!";
+  } else {
+      echo "Error: " . mysqli_error($con);
+  }
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,13 +103,13 @@
                     <h5 class="card-title">Swift</h5>
                     <p class="card-text">Poate pentru mulți necunoscută această ramură a programării, însă programarea în Swift ajută utilizatorii de dispozitive iOS și le asigură toate aplicațiile necesare. Cu toate că mulți nu au auzit foarte multe despre această tehnologie, este extrem de folosită, de regulă în cele mai mari companii care au nevoie să funcționeze pe toate tipurile de platforme, de la Android și până la iOS. Noi învățăm cum se desfășoară munca unui iOS Developer, și anume lucrul în Swift, de la crearea unor aplicații simple, cum ar fi un cronometru sau un generator de numere Random, și până la crearea propriei nostre galerii sau a propriului nostru meniu, asemenea unuia văzut în restaurante.</p>
                     <p class="card-text"><small class="text-muted">Ești doar la un pas de a te înscrie.</small></p>
-                    <div class="center-button">
-                      <a href="signup.php">
-                        <button class="send_button">
-                        <span>Înscrie-te</span>
+                    <form method="POST" action="">
+                      <div class="center-button">
+                        <button class="send_button" id="submit" name="submit">
+                          <span>Înscrie-te</span>
                         </button>
-                      </a>
-                    </div>
+                      </div>
+                    </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">

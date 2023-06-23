@@ -1,3 +1,22 @@
+<?php
+session_start();
+include_once('config.php');
+if (isset($_SESSION['NAME'])) {
+  $loggedInUser = $_SESSION['NAME'];
+  $courseName = "Java Developer";
+
+if (isset($_POST['submit'])) {
+  $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
+  $result = mysqli_query($con, $query);
+  
+  if ($result) {
+      echo "Enrollment successful!";
+  } else {
+      echo "Error: " . mysqli_error($con);
+  }
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,13 +103,13 @@
                     <h5 class="card-title">Java Developer</h5>
                     <p class="card-text">Cursul de Java Developer este unul extrem de amplu, cum este de altfel și limbajul. Printre cele mai folosite și cele mai vechi limbaje, Java și-a păstrat importanța de-a lungul timpului și a reușit să se mențină printre cele mai folosite limbaje din lume. Cei mai mulți angajați din orice companie de IT, așa cum declară un studiu foarte recent, sunt programatori care lucrează exclusiv cu Java. De la simpla rezolvare a problemelor matematice, la lucrul cu forme geometrice, grafice statistice, desene cu diferite forme geometrice, și până la crearea propriilor compilatoare, Java este un limbaj complet, așa cum ar spune mulți, potrivit pentru orice nivel de cunoștințe are fiecare persoană în parte.</p>
                     <p class="card-text"><small class="text-muted">Ești doar la un pas de a te înscrie.</small></p>
-                    <div class="center-button">
-                      <a href="signup.php">
-                        <button class="send_button">
-                        <span>Înscrie-te</span>
+                    <form method="POST" action="">
+                      <div class="center-button">
+                        <button class="send_button" id="submit" name="submit">
+                          <span>Înscrie-te</span>
                         </button>
-                      </a>
-                    </div>
+                      </div>
+                    </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">

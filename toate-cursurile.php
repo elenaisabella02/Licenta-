@@ -1,19 +1,17 @@
           <?php
           include_once('config.php');
           session_start();
-          $userID = $_SESSION['ID']; // Assuming you have the user ID stored in the session
-$query = "SELECT role FROM users WHERE id = '$userID'";
-$result = mysqli_query($con, $query);
+          $userID = $_SESSION['ID']; 
+          $query = "SELECT role FROM users WHERE id = '$userID'";
+          $result = mysqli_query($con, $query);
 
 if ($result) {
     $row = mysqli_fetch_assoc($result);
     $role = $row['role'];
     
-    // Assign the role to the session variable
+
     $_SESSION['role'] = $role;
-    
-    // Close the database connection
-} else {
+    } else {
     // Handle any database errors
     echo "Error retrieving user role.";
 }

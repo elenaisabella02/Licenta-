@@ -1,3 +1,22 @@
+<?php
+session_start();
+include_once('config.php');
+if (isset($_SESSION['NAME'])) {
+  $loggedInUser = $_SESSION['NAME'];
+  $courseName = "Python Developer";
+
+if (isset($_POST['submit'])) {
+  $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
+  $result = mysqli_query($con, $query);
+  
+  if ($result) {
+      echo "Enrollment successful!";
+  } else {
+      echo "Error: " . mysqli_error($con);
+  }
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,13 +102,13 @@
                     <h5 class="card-title">Python</h5>
                     <p class="card-text">Cursul de Pyhton este potrivit pentru orice vârstă, întrucât unii copii sunt pasionați de programarea în acest limbaj, atât datorită simplității lui, cât și a faptului că putem crea jocuri de toate felurile aici, câteva exemple ar fi jocul de Snake, Tetris sau chiar șah, un joc multiplayer. Python în schimb e un limbaj și foarte funcțional, care ne dă posibilitatea de a ne ocupa de crearea de aplicații, cum ar fi un MP3 downloader, dar este strâns legat și de automatizări și robotică. Deci acest limbaj nu numai că este simplu, dar are și aplicații în numeroase domenii, iar în ultima perioadă, folosirea lui a luat o amploare de proporții uriașe. Încercăm să ne facem viața mai ușoară cu ajutorul lui Python și a numeroaselor pachete pe care el ni le oferă.</p>
                     <p class="card-text"><small class="text-muted">Ești doar la un pas de a te înscrie.</small></p>
-                    <div class="center-button">
-                      <a href="signup.php">
-                        <button class="send_button">
-                        <span>Înscrie-te</span>
+                    <form method="POST" action="">
+                      <div class="center-button">
+                        <button class="send_button" id="submit" name="submit">
+                          <span>Înscrie-te</span>
                         </button>
-                      </a>
-                    </div>
+                      </div>
+                    </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">

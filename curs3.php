@@ -1,3 +1,23 @@
+
+<?php
+session_start();
+include_once('config.php');
+if (isset($_SESSION['NAME'])) {
+  $loggedInUser = $_SESSION['NAME'];
+  $courseName = "C# Developer";
+
+if (isset($_POST['submit'])) {
+  $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
+  $result = mysqli_query($con, $query);
+  
+  if ($result) {
+      echo "Enrollment successful!";
+  } else {
+      echo "Error: " . mysqli_error($con);
+  }
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,13 +104,13 @@
                     <h5 class="card-title">C# Developer</h5>
                     <p class="card-text">Poate mai puțin auzită pentru mulți, C# este un limbaj de programare extrem de vechi, care folosește aceeași sintaxă cu bine cunoscutul C++. Funcționalitățile și întrebuințările acestei aplicații, în schimb, sunt bine cunoscute de multe persoane: crearea de jocuri, cum ar fi Snake, sau jocuri de Șah, crearea de aplcații realiste, cum ar fi una de imprimare a diferitor fișiere, sau poate una de editare a pozelor. Pe lângă acestea, limbajul ne oferă și posibilitatea de a scrie programe care să rezolve mult mai ușor probleme matematice. El este interesant și datorită tuturor framework-urilor care au derivat din el, cum ar fi .NET, care ne ajută la crearea de site-uri web, asemenea tehnologiilor menționate la cursul de Front-End.</p>
                     <p class="card-text"><small class="text-muted">Ești doar la un pas de a te înscrie.</small></p>
-                    <div class="center-button">
-                      <a href="signup.php">
-                        <button class="send_button">
-                        <span>Înscrie-te</span>
+                    <form method="POST" action="">
+                      <div class="center-button">
+                        <button class="send_button" id="submit" name="submit">
+                          <span>Înscrie-te</span>
                         </button>
-                      </a>
-                    </div>
+                      </div>
+                    </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">

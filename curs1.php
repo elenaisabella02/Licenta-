@@ -1,3 +1,22 @@
+<?php
+session_start();
+include_once('config.php');
+if (isset($_SESSION['NAME'])) {
+  $loggedInUser = $_SESSION['NAME'];
+  $courseName = "Front-End Developer";
+
+if (isset($_POST['submit'])) {
+  $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
+  $result = mysqli_query($con, $query);
+  
+  if ($result) {
+      echo "Enrollment successful!";
+  } else {
+      echo "Error: " . mysqli_error($con);
+  }
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,13 +105,13 @@
                     <h5 class="card-title">Front-End Developer</h5>
                     <p class="card-text">Cursul de Front-End Developer ne introduce în bazele web-design-ului și se bazează pe partea vizuală a unui site web. Această parte ne lasă frâu liber imaginației, ne permite să ne jucăm foarte mult cu ceea ce învățăm și ne ajută să le oferim utilizatorilor cea mai plăcută experiență pe care o pot avea atunci când folosesc motoarele de căutare. Principalele tehnologii pe care ne bazăm sunt HTML, CSS, și Javascript. Vom învăța să ne jucăm cu așezarea în pagină, adăugarea de efecte vizuale, astfel încât produsul final pe care noi îl livrăm să fie cât mai interactiv și plăcut vizual, deoarece cu toții am avut măcar un site de care nu am fost mulțumiți din punct de vedere al aspectului sau al complexității lui.</p>
                     <p class="card-text"><small class="text-muted">Ești doar la un pas de a te înscrie.</small></p>
-                    <div class="center-button">
-                      <a href="signup.php">
-                        <button class="send_button">
-                        <span>Înscrie-te</span>
+                    <form method="POST" action="">
+                      <div class="center-button">
+                        <button class="send_button" id="submit" name="submit">
+                          <span>Înscrie-te</span>
                         </button>
-                      </a>
-                    </div>
+                      </div>
+                    </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">

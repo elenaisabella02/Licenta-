@@ -170,11 +170,15 @@ include_once('loginlogic.php');
                                   if($numeUserCurs["nume"] == $_SESSION["NAME"])
                                     {
                                       $numecurs = $numeUserCurs["curs"];
-                                      echo '<p>'."$numecurs".'</a>';
+                                      echo '<p >'."$numecurs".'</a>';
+                                      echo '<button type="button" class="btn btn-primary"><a style="color:white;text-decoration:none;" href=" https://zoom.us/j/3425221607">Open Meet</a></button>
+                                      <img src = "assets/images/QR.png" style="width:5vw">';
                                     }
                                 }
+                                
                               
                               ?>
+                              
                             </div>
 
                         </div>

@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> InfoChim - Ce face chimia in organismul uman? </title>
+    <title> test </title>
     <link rel="stylesheet" type="text/css" href="../css/_test.css">
     <link rel="icon" type="image/png" href="../resources/images/logo.PNG" />
 </head>

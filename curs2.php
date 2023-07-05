@@ -179,49 +179,29 @@ if (isset($_POST['submit'])) {
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                   <div class="card card-testimonials">
                       <div class="card-body">
-                        <h5 class="card-title">Tomasz M. Krystyan - Full Stack Developer</h5>
-                        <p class="card-text card-testimonials-margin">„Toți mentorii sunt oameni fantastici, serioși, onești și deschiși; atmosfera este genială; procesul de învățare este foarte eficient. De la oră la oră știu mai multe decât oricând, mentorii țin cursuri excelente, propun exerciții interesante și mențin cu atenție progresul grupului.”</p>
+                        <h5 class="card-title">Eliza Oancea</h5>
+                        <p class="card-text card-testimonials-margin">„Cursul de Back-End a fost o mare schimbare pentru mine. Tot ce am învățat alături de mentori mi se pare uimitor, deoarece acum simt că pot aduce o schimbare în viețile oamenilor care utilizează internetul.”</p>
                       </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                   <div class="card card-testimonials">
                       <div class="card-body">
-                        <h5 class="card-title">Machine Learning Developer - Amazon UK</h5>
-                        <p class="card-text card-testimonials-margin">„Învățarea orientată spre practică de la IT Academy mi-a oferit un mediu de susținere în care m-am simțit foarte bine. Am studiat codarea prin exemple din viața reală pe care le folosesc și acum în munca mea de zi cu zi.”</p>
+                        <h5 class="card-title">Sabin Teodorovschi</h5>
+                        <p class="card-text card-testimonials-margin">„Înainte să mă alătur acestui curs, am lucrat ca Front-End Developer, dar până atunci această tehnologie mi se părea extrem de grea, dar mentorii au reușit să îmi schimbe părerea, dar și cariera radical.”</p>
                       </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                   <div class="card card-testimonials">
                       <div class="card-body">
-                        <h5 class="card-title">Elena Anghel</h5>
-                        <p class="card-text card-testimonials-margin">"Trainerii ne oferă mult suport, anunțându-ne când știu de anunțuri de joburi pentru juniori. Cred că am reușit să mă angajez pentru că am început să aplic din timpul cursului la joburi chiar dacă nu îndeplineam toate condițiile încă."</p>
-                      </div>
-                    </div>
-                  
-                </div>
-                <div class="carousel-item">
-                  <div class="card card-testimonials">
-                      <div class="card-body">
-                        <h5 class="card-title">Ada Palade</h5>
-                        <p class="card-text card-testimonials-margin">"Este vorba de sfaturi, de sprijin și de împărtășirea experiențelor profesionale. Lucrez mai mult pe partea operațională, dar atitudinea, bazele de date și sarcinile de configurare m-au ajutat enorm."</p>
-                      </div>
-                    </div>
-                  
-                </div>
-                <div class="carousel-item">
-                  <div class="card card-testimonials">
-                      <div class="card-body">
-                        <h5 class="card-title">Adina Dumitrașcu</h5>
-                        <p class="card-text card-testimonials-margin">"Programa cursului este foarte vastă, nu numai despre Java. Este un loc bun să îți începi formarea. Cursul m-a ajutat să îmi creez o bază de cunoștințe pe care o voi dezvolta în continuare, în funcție de fișa postului sau de cerințele proiectului la care lucrez."</p>
+                        <h5 class="card-title">Andra Pricop</h5>
+                        <p class="card-text card-testimonials-margin">"Programul este extrem de bine structurat, de la teoria pe care o parcurgem împreună, până la exercițiile aplicative care sporesc în dificultate pe parcurs, lucru care îți menține curiozitatea învățării."</p>
                       </div>
                     </div>
                   

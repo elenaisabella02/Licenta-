@@ -78,7 +78,6 @@
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner ">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -106,14 +105,7 @@
                   </div>
                 
               </div>
-              <div class="carousel-item">
-                <div class="card card-testimonials">
-                    <div class="card-body">
-                      <h5 class="card-title">Expozitia aplicatiilor</h5>
-                      <p class="card-text card-testimonials-margin">Ai ocazia sa-ti faci cunoscute idea si produsul dezvoltat prin participarea la Expozitia aplicatiilor D.P.I.T., care ofera proiectelor vizibilitate in mediul de business si media, la eveniment fiind invitati reprezentanti ai firmelor de IT.</p>
-                    </div>
-                  </div>
-              </div>
+              
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -240,7 +232,7 @@
                           <h5 class="card-title">Devino profesor</h5>
                           <p class="card-text">Fii omul pe care ți l-ai fi dorit la început de carieră, care să te ajute, să te ghideze și să îți poată răspune la întrebări oricând îți dorești. Devino o inspirație și un exemplu pentru elevii tăi!</p>
                           <div class="center-button">
-                            <a href="signup.php">
+                            <a href="contact.php">
                             <button class="send_button">
                               <span>Devino profesor</span>
                             </button>

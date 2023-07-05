@@ -17,7 +17,7 @@
     <div class="centered-page">
         <div class="absolut">
 
-            <div class="title"> Test </div>
+            <div class="title"><h1> Test</h1> </div>
 
             <!---------------------- Intrebarea 1 -------------->
 

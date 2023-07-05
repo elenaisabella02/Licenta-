@@ -1,6 +1,4 @@
 <?php
-// add_course.php
-
 // Include the database connection and other necessary files
 include_once('config.php');
 
@@ -42,7 +40,6 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         echo json_encode($response);
     }
 } else {
-    // Handle non-AJAX request if needed
-    // ...
+
 }
 ?>

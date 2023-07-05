@@ -10,12 +10,23 @@ if (isset($_POST['submit'])) {
   $query = "INSERT INTO inscrieri (nume, curs) VALUES ('$loggedInUser', '$courseName')";
   $result = mysqli_query($con, $query);
   
-  if ($result) {
-      echo "Enrollment successful!";
-      header("Location:pay.php");
-  } else {
-      echo "Error: " . mysqli_error($con);
+  if($_SESSION['ROLE'] == "profesor"){
+    if ($result) {
+        echo "Enrollment successful!";
+        header("Location:settings.php");
+    } else {
+        echo "Error: " . mysqli_error($con);
+    }
   }
+    else
+    {
+      if ($result) {
+        echo "Enrollment successful!";
+        header("Location:pay.php");
+    } else {
+        echo "Error: " . mysqli_error($con);
+    }
+    }
 }
 }
 ?>

@@ -83,7 +83,6 @@
                   <ul class="features">
                     <li>Acces la două cursuri</li>
                     <li>Poți alege cursurile </li>   
-                    <button class="send_button shop-button">Selectează</button>
                   </ul>
                 </div>
                 <div class="promo scale col-md-4 col-12">
@@ -95,7 +94,6 @@
                   <ul class="features">
                     <li>Acces la trei cursuri</li>
                     <li>Alege-ți cursurile favorite</li>  
-                    <button class="send_button shop-button">Selectează</button> 
                   </ul>
                 </div>
                 <div class="promo col-md-3 col-12 py-4">
@@ -107,7 +105,6 @@
                   <ul class="features">
                     <li>Acces la un curs</li>
                     <li>Poți alege cursurile</li>   
-                    <button class="send_button shop-button">Selectează</button>
                   </ul>
                 </div>
             </div>

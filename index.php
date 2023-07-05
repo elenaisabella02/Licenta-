@@ -77,21 +77,21 @@
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/images/index.html/carousel-img-1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/index.html/carousel-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 <h3>Domeniul IT, mai aproape ca niciodată</h3>
                 <p>Invață alături de mentorii noștri, care sunt gata să te ajute la orice pas</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/index.html/carousel-img-2.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/index.html/carousel-2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 <h3>Lucrul în echipa, cheia succesului</h3>
                 <p>Credem în lucrul în echipă și la colaborare pentru cel mai bun rezultat</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/index.html/carousel-img-3.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/index.html/carousel-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Un mediu de lucru plăcut, a doua ta casă</h5>
                 <p>Venirea la job-ul de zi cu zi poate deveni o plăcere alături de noi</p>
@@ -279,7 +279,7 @@
             <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="./assets/images/index.html/Devino-profesor.jpg" class="img-fluid rounded-start img-sus" alt="...">
+                    <img src="./assets/images/index.html/teacher.jpg" class="img-fluid rounded-start img-sus" alt="...">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -320,7 +320,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <img src="./assets/images/index.html/Devino-student.jpg" class="img-fluid rounded-start img-jos" alt="...">
+                    <img src="./assets/images/index.html/student.jpg" class="img-fluid rounded-start img-jos" alt="...">
                   </div>
                 </div>
             </div>
@@ -343,7 +343,7 @@
                   <div class="carousel-item active" data-bs-interval="10000">
                     <div class="card card-testimonials">
                         <div class="card-body">
-                          <h5 class="card-title">Tomasz M. Krystyan - Full Stack Developer</h5>
+                          <h5 class="card-title">Toma Teodor-Full Stack Developer</h5>
                           <p class="card-text card-testimonials-margin">„Toți mentorii sunt oameni fantastici, serioși, onești și deschiși; atmosfera este genială; procesul de învățare este foarte eficient. De la oră la oră știu mai multe decât oricând, mentorii țin cursuri excelente, propun exerciții interesante și mențin cu atenție progresul grupului.”</p>
                         </div>
                       </div>
@@ -351,7 +351,7 @@
                   <div class="carousel-item" data-bs-interval="2000">
                     <div class="card card-testimonials">
                         <div class="card-body">
-                          <h5 class="card-title">Machine Learning Developer - Amazon UK</h5>
+                          <h5 class="card-title">Ioana Dumitru-Python Developer</h5>
                           <p class="card-text card-testimonials-margin">„Învățarea orientată spre practică de la IT Academy mi-a oferit un mediu de susținere în care m-am simțit foarte bine. Am studiat codarea prin exemple din viața reală pe care le folosesc și acum în munca mea de zi cu zi.”</p>
                         </div>
                       </div>
@@ -359,7 +359,7 @@
                   <div class="carousel-item">
                     <div class="card card-testimonials">
                         <div class="card-body">
-                          <h5 class="card-title">Elena Anghel</h5>
+                          <h5 class="card-title">Elena Anghel-iOS Developer</h5>
                           <p class="card-text card-testimonials-margin">"Trainerii ne oferă mult suport, anunțându-ne când știu de anunțuri de joburi pentru juniori. Cred că am reușit să mă angajez pentru că am început să aplic din timpul cursului la joburi chiar dacă nu îndeplineam toate condițiile încă."</p>
                         </div>
                       </div>
@@ -368,7 +368,7 @@
                   <div class="carousel-item">
                     <div class="card card-testimonials">
                         <div class="card-body">
-                          <h5 class="card-title">Ada Palade</h5>
+                          <h5 class="card-title">Ada Palade-Back-End Developer</h5>
                           <p class="card-text card-testimonials-margin">"Este vorba de sfaturi, de sprijin și de împărtășirea experiențelor profesionale. Lucrez mai mult pe partea operațională, dar atitudinea, bazele de date și sarcinile de configurare m-au ajutat enorm."</p>
                         </div>
                       </div>
@@ -377,7 +377,7 @@
                   <div class="carousel-item">
                     <div class="card card-testimonials">
                         <div class="card-body">
-                          <h5 class="card-title">Adina Dumitrașcu</h5>
+                          <h5 class="card-title">Adina Dumitrașcu-C# Developer</h5>
                           <p class="card-text card-testimonials-margin">"Programa cursului este foarte vastă, nu numai despre Java. Este un loc bun să îți începi formarea. Cursul m-a ajutat să îmi creez o bază de cunoștințe pe care o voi dezvolta în continuare, în funcție de fișa postului sau de cerințele proiectului la care lucrez."</p>
                         </div>
                       </div>

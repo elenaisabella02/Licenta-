@@ -6,7 +6,7 @@
     $username = $con->real_escape_string($_POST['username']);
     $password = $con->real_escape_string(md5($_POST['password']));
     $name     = $con->real_escape_string($_POST['name']);
-    $role     = "elev";
+    $role     = "profesor";
     $query  = "INSERT INTO users (name,username,password,role) VALUES ('$name','$username','$password','$role')";
     $result = $con->query($query);
     if ($result==true) {
@@ -116,14 +116,6 @@
             <label for="password">Password:</label>
             <input type="password" class="form-control" name="password" placeholder="Enter Password" required="">
           </div>
-          <!-- <div class="form-group">  
-            <label for="role">Role:</label>
-            <select class="form-control" name="role" required="">
-              <option value="">Select Role</option>
-              <option value="elev">Elev</option>
-              <option value="profesor">Profesor</option>
-            </select>
-          </div> -->
           <div class="form-group">
             <p>Already have account ?<a href="login.php"> Login</a></p>
             <input type="submit" name="submit" class="btn btn-primary">

@@ -287,7 +287,7 @@
                       <p class="card-text">Devino parte dintr-o comunitate unită, care vrea sa contribuie la dezvoltarea generațiilor actuale și la formarea lor.Formarea noilor talente poate sta în mâinile tale, la fel ca împărtășirea pasiunii cu care noi ne facem treaba. Dacă simți că poți avea un impact în viața celor la început de drum, te invităm să te alături echipei noastre, care se mărește continuu.
                       </p>
                       <div class="center-button">
-                        <a href="signup.php">
+                        <a href="contact.php">
                         <button class="send_button">
                           <span>Devino profesor!</span>
                         </button>
